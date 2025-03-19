@@ -48,7 +48,7 @@ document
     });
     historyList.classList.add("p-class");
     historyList.innerHTML = `
-    <p>You have completed the task Fix Mobile Button issue at ${formattedTime}</p>
+    <p>You have completed the task Add Dark Mode at ${formattedTime}</p>
     `;
     history.appendChild(historyList);
     plusNumber.innerText = plusCurrentNumber + 1;
@@ -75,7 +75,7 @@ document
     });
     historyList.classList.add("p-class");
     historyList.innerHTML = `
-    <p>You have completed the task Fix Mobile Button issue at ${formattedTime}</p>
+    <p>You have completed the task Optimize Home page  at ${formattedTime}</p>
     `;
     history.appendChild(historyList);
     plusNumber.innerText = plusCurrentNumber + 1;
@@ -103,7 +103,7 @@ document
     });
     historyList.classList.add("p-class");
     historyList.innerHTML = `
-    <p>You have completed the task Fix Mobile Button issue at ${formattedTime}</p>
+    <p>You have completed the task Add new emoji 🤲 at ${formattedTime}</p>
     `;
     history.appendChild(historyList);
     plusNumber.innerText = plusCurrentNumber + 1;
@@ -131,7 +131,7 @@ document
     });
     historyList.classList.add("p-class");
     historyList.innerHTML = `
-    <p>You have completed the task Fix Mobile Button issue at ${formattedTime}</p>
+    <p>You have completed the task Integrate OpenAI API at ${formattedTime}</p>
     `;
     history.appendChild(historyList);
     plusNumber.innerText = plusCurrentNumber + 1;
@@ -162,14 +162,39 @@ document
     });
     historyList.classList.add("p-class");
     historyList.innerHTML = `
-    <p>You have completed the task Fix Mobile Button issue at ${formattedTime}</p>
+    <p>You have completed the task Improve Job searching at ${formattedTime}</p>
     `;
     history.appendChild(historyList);
 
     plusNumber.innerText = plusCurrentNumber + 1;
+    alert("congrates!!! You have complete all the current task");
   });
 
-document.getElementById('history-btn').addEventListener('click',function(){
-    let historyListDiv=document.getElementById('history');
-    historyListDiv.innerText = '';
-})
+document.getElementById("history-btn").addEventListener("click", function () {
+  let historyListDiv = document.getElementById("history");
+  historyListDiv.innerText = "";
+});
+
+document.getElementById("another-page").addEventListener("click", function () {
+  window.location.href = "/blogs.html";
+});
+
+document.getElementById("color").addEventListener("click", function () {
+  const randomColor = "#" + Math.floor(Math.random() * 16777215).toString(16);
+  document.body.style.backgroundColor = randomColor;
+});
+
+const mainDiv = document.getElementById("date");
+const today = new Date();
+const formattedDate = today.toLocaleDateString("en-US", {
+  weekday: "long",
+  year: "numeric",
+  month: "long",
+  day: "numeric",
+});
+
+const newDate = document.createElement("p");
+newDate.innerHTML = `${formattedDate}`;
+
+mainDiv.appendChild(newDate);
+console.log(formattedDate);

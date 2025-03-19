@@ -13,7 +13,7 @@
     <style>
       /* class="bg-gray-200 mt-5 p-3 rounded-xl text-xl font-bold" */
       .p-class {
-        background-color: rgb(224, 224, 215);
+        background-color: rgb(226 232 240);
         margin-top: 10px;
         padding: 15px;
         border-radius: 20px;
@@ -41,7 +41,7 @@
               <h1 id="plus-number" class="font-extrabold text-[24px]">23</h1>
             </div>
             <div class="bg-slate-200 p-2 rounded-3xl">
-              <img class="w-6" src="./assets/theme-btn.png" alt="" />
+              <img id="color" class="w-6" src="./assets/theme-btn.png" alt="" />
             </div>
           </div>
         </section>
@@ -63,12 +63,12 @@
           </div>
 
           <div
+            id="another-page"
             class="flex items-center px-6 p-3 rounded-2xl bg-gradient-to-r from-[#5366dd] to-[#8e96cc]"
           >
             <img class="w-16" src="./assets/board.png" alt="" />
             <h1 class="text-white font-bold text-2xl">
-              Discover Something <br />
-              New Today!
+              Discover Something New Today!
             </h1>
           </div>
 
@@ -78,10 +78,11 @@
             <div>
               <img src="./assets/calender.png" alt="" />
             </div>
-            <h1>
+            <div id="date"></div>
+            <!-- <h1 class="date">
               Wed , <br />
               <span class="font-bold">Jul 28 2025</span>
-            </h1>
+            </h1> -->
           </div>
         </section>
         <hr class="border-t-2 border-dashed border-gray-300 my-4" />

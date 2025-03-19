@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>blog</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-[#dfd8d8] min-h-screen pt-12 px-10">
+    <header>
+      <nav>
+        <section
+          class="flex justify-between items-center p-3 bg-white border rounded-2xl"
+        >
+          <div class="flex gap-2 items-center">
+            <img class="w-10" src="./assets/logo.png" alt="" />
+            <h1 class="text-2xl">Dev<span class="font-bold">Board</span></h1>
+          </div>
+
+          <button id="back" class="btn btn-active btn-primary text-xl">
+            Back to Desk
+          </button>
+        </section>
+      </nav>
+    </header>
+
+    <main>
+      <h1 class="font-bold text-4xl text-center my-6">Blogs</h1>
+      <!-- question-1 -->
+      <section class="bg-white border rounded-lg mb-5">
+        <p class="font-extrabold text-2xl px-5 pt-5">
+          Question-1: What are the different ways to select an element in the
+          DOM?
+        </p>
+        <div class="divider"></div>
+
+        <p class="font-semibold text-xl px-5 pb-2">
+          <span class="font-extrabold text-2xl">Ans:</span> There are several
+          ways to select an element in the DOM. Using getElementById, Using
+          getElementsByClassName, Using getElementsByTagName, Using
+          querySelector, Using querySelectorAl
+        </p>
+      </section>
+
+      <!-- question-2 -->
+      <section class="bg-white border rounded-lg mb-5">
+        <p class="font-extrabold text-2xl px-5 pt-5">
+          Question-2: What is the difference between innerHTML, innerText, and
+          textContent ?
+        </p>
+        <div class="divider"></div>
+        <p class="font-semibold text-xl px-5 pb-2">
+          <span class="font-extrabold text-2xl">Ans:</span> innerHTML Gets or
+          sets the HTML content inside an element and innerText Gets or sets
+          only the visible text ignores hidden text and scripts and textContent
+          Gets or sets all text content, including hidden text .
+        </p>
+      </section>
+
+      <!-- question-3-->
+      <section class="bg-white border rounded-lg mb-5">
+        <p class="font-extrabold text-2xl px-5 pt-5">
+          Question-3: What is event delegation in the DOM?
+        </p>
+        <div class="divider"></div>
+        <p class="font-semibold text-xl px-5 pb-2">
+          <span class="font-extrabold text-2xl">Ans:</span> Event delegation is
+          a technique where you add an event listener to a parent element
+          instead of adding it to multiple child elements.
+        </p>
+      </section>
+
+      <!-- question-4 -->
+      <section class="bg-white border rounded-lg mb-5">
+        <p class="font-extrabold text-2xl px-5 pt-5">
+          Question-4: What is event bubbling in the DOM?
+        </p>
+        <div class="divider"></div>
+        <p class="font-semibold text-xl px-5 pb-2">
+          <span class="font-extrabold text-2xl">Ans:</span> Event bubbling is a
+          behavior in the DOM where an event starts from the target element and
+          then propagates (moves up) through its parent elements until it
+          reaches the root .
+        </p>
+      </section>
+
+      <!-- question-5 -->
+      <section class="bg-white border rounded-lg mb-5">
+        <p class="font-extrabold text-2xl px-5 pt-5">
+          Question-5: How do you create, add, and remove elements using
+          JavaScript?
+        </p>
+        <div class="divider"></div>
+        <p class="font-semibold text-xl px-5 pb-2">
+          <span class="font-extrabold text-2xl">Ans:</span> Use createElement()
+          to create a new HTML element.There are multiple ways to add the
+          element to the DOM : appendChild(),append(),prepend() etc .remove()
+          Directly removes an element.
+        </p>
+      </section>
+    </main>
+    <!-- <script>
+      document.getElementById('back').addEventListener('click',function(){
+  window.location.href='/index.html';
+})
+    </script> -->
+    <script src="blogs.js"></script>
+  </body>
+</html>
