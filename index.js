@@ -176,7 +176,7 @@ document.getElementById("history-btn").addEventListener("click", function () {
 });
 
 document.getElementById("another-page").addEventListener("click", function () {
-  window.location.href = "/blogs.html";
+  window.location.href = "./blogs.html";
 });
 
 document.getElementById("color").addEventListener("click", function () {
